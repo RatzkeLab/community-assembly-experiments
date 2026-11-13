@@ -1,0 +1,17 @@
+--- 2026 11 13 1549 ---
+i have initial data coming in for my 20261026 community experiment. i have sequenced culture_plate 5 and 6 24h and daily dilution day 5 (plates 5,6, 9,10 by plate index). day 10 daily dilution was contaminated so i will not be sequencing it and it looks like pcr might have failed or given weak results for a couple of the plates (6 and 9) so i may need to re-run those. please help me write some qc notebooks with accompanying scripts and visualizations. 
+
+what i am thinking is 3 notebooks:
+1. qc to make sure that the strains we are thinking/hoping landed in the wells actually did land in those wells (and check for contamination, especially in the d5 plates). 
+2. check technical replicates within plates for reproducibility
+3. if there's enough coverage to do this investigation: does the state at 24h give us enough information to predict the state at d5
+
+data can be found in 
+/home/rl/data/interim/interim/demultiplexing/20261112_demux
+and plate reader data (shouldnt be necessary at this stage but may be useful later) at
+/home/rl/data/raw/plate_reader_csvs/data_ascii/Karl_2026/Karl_20261028_OD
+
+i think the most up to date and reliable database for strain mapping can be found at
+/home/rl/scripts/karl/sequencing_experiments/pairwise_interaction_experiments/analyses/20261021/01_reference_db/outputs/reference_db_20260907_haplotypes.fasta
+
+please document your work and ask if anything is unclear or you are unsure where to look for something

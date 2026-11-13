@@ -1,0 +1,11 @@
+{
+ "NEAR_BASE": 12,
+ "NEAR_MULT": 2.0,
+ "Q_MIN": 16,
+ "TWIN_BP": 4,
+ "stray_strain_ceiling": {
+  "p99": 7.0,
+  "p999": 27.228999999999814,
+  "max": 47.0
+ }
+}

@@ -1,0 +1,7 @@
+*.csv
+*.pyc
+*.svg
+*.png
+*.log
+!**/01_setup/*/*echo*.csv
+!**/01_setup/*/*layout*.csv
