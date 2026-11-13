@@ -16,8 +16,8 @@ nanofilt:
 
 minibar:
   prefix: ""   # -P prefix for per-sample files
-  barcode_edit_dist: 6
-  primer_edit_dist: 6
+  barcode_edit_distance: 4
+  primer_edit_distance: 6
   search_length: 150
 
 outdir: "/home/rl/data/interim/karl/demultiplexing/20261112_demux/"
