@@ -1,7 +1,7 @@
 # Barcode plates 1-16 of 20261026. Plate99_* rows are decoys: combinations put in no
 # well; reads assigned to them measure mis-assignment. Plates not on the flowcell
 # are negative controls.
-fastq_input: <fill in after the run>
+fastq_input: /home/rl/data/raw/karl/sequencing_fastqs/20261120_fastq_pass
 barcodes_tsv: /home/rl/scripts/karl/sequencing_experiments/community_assembly_experiments/20261026/01_setup/outputs_part02/minibar_sheet_20261026_part02.tsv
 nanofilt:
   min_len: 1400
@@ -14,4 +14,4 @@ minibar:
   barcode_edit_distance: 4
   primer_edit_distance: 6
   search_length: 150
-outdir: /home/rl/data/interim/karl/demultiplexing/20261026_part02_demux/
+outdir: /home/rl/data/interim/karl/demultiplexing/20261120_demux_prelim
