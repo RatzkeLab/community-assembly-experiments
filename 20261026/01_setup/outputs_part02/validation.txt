@@ -1,0 +1,6 @@
+inputs: PASS
+layout: PASS
+barcodes: PASS
+primer picklists: PASS
+sheet: PASS
+minibar: PASS

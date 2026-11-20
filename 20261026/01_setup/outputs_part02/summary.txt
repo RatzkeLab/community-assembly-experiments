@@ -1,0 +1,15 @@
+experiment 20261026 part 2: barcode plates 13 = plate 1 @ 5d, 14 = plate 2 @ 5d, 15 = plate 3 @ 5d, 16 = plate 4 @ 5d
+  1232 wells (1224 community, 8 blank), layout = culture plate's 24 h plate well for well
+
+barcode combinations for the new wells (part 1's 4,004, decoys incl., never reused):
+  never on any sheet:           625 (of 625 left)
+  20261021 decoys (no DNA):      308 (of 308)
+  20261021 wells, safe reuse:    299 (of 2464; each 20261021 well held a strain the new well lacks, or was a blank)
+    their 20261021 plates: {1: 39, 2: 38, 3: 29, 4: 34, 5: 39, 6: 39, 7: 43, 8: 38}
+  left for further plates: 2,165, all 20261021 well combinations
+
+primer drawn per oligo source well (250 nL per oligo per well):
+  plates 13-16:          median 3.5 uL, max 5.8 uL
+  plates 1-16:           median 14.2 uL, max 17.0 uL (P24)
+  + 20261021 plates 1-8: median 21.5 uL, max 23.2 uL (N20)  [if all shot from one primer plate]
+minibar (whole sheet, 5,236 rows): {'FwIndex_min_edit_distance': 12, 'RvIndex_min_edit_distance': 12, 'planned_e': 4}

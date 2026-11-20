@@ -1,0 +1,50 @@
+{
+ "experiment": "20261026",
+ "part": 2,
+ "created": "2026-11-18T22:45:50",
+ "barcode_plates": {
+  "13": [
+   1,
+   "5d"
+  ],
+  "14": [
+   2,
+   "5d"
+  ],
+  "15": [
+   3,
+   "5d"
+  ],
+  "16": [
+   4,
+   "5d"
+  ]
+ },
+ "seed": [
+  20261026,
+  2
+ ],
+ "script_md5": "213015bbe99e4825e6ab18e5e7d8247c",
+ "built_on": {
+  "outputs/layout.csv": "f7bc7b6d4b64f0d9e83e2204595d73bd",
+  "outputs/minibar_sheet_20261026.tsv": "1a71499f030ee734038d769078b66236",
+  "outputs/manifest.json": "50e8ebe94a12faf63de649f9a7b70e3a",
+  "20261021/layout.csv": "633211382b6f429196681f55c773af84",
+  "20261021/minibar_sheet_20261021.tsv": "c5fa9036c980eec6e0403c4c0bdc7e0a",
+  "primer_specs": "356e2aac32861cbd10b36f03a43a73d4",
+  "failed_barcodes_fwd": "5fa8c1c78d1cea3287f8a92f2ddedc7f",
+  "failed_barcodes_rev": "495725b2aadfdb098601b6fcdb320eec"
+ },
+ "outputs": {
+  "demultiplex_config_20261026_part02.yaml": "f469b90aeffbe788fd774d536e97fc11",
+  "layout.csv": "f8af73305cf4192a13a82abf9ab6dc1b",
+  "minibar_sheet_20261026_part02.tsv": "ed6ae2f5a005d1c6b59e001512392f64",
+  "part02_barcodes.csv": "6b0e7bf82b8373323b0f1999f1b77254",
+  "primer_shooting/echo_primers_20261026_plate_13.csv": "ef83f6b0f9472c2710e70dd94ff472d6",
+  "primer_shooting/echo_primers_20261026_plate_14.csv": "0258a38d98134698058f5613f41f136c",
+  "primer_shooting/echo_primers_20261026_plate_15.csv": "db798ae50db98f2ed1e25408e5df435f",
+  "primer_shooting/echo_primers_20261026_plate_16.csv": "88d91d09013ab398770c03609d11838c",
+  "summary.txt": "e06f42b930c48bc70194d43a08fa4d27",
+  "validation.txt": "adc02e00d2ffe1a652c5348b376aefd6"
+ }
+}

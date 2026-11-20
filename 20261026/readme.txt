@@ -16,6 +16,8 @@ Plates
   6     second passage plate, diluted in parallel with 5
   barcode plates: 5 / 6 = plates 5 / 6 at 24 h; 7 / 8 at 48 h; 9 / 10 at 5 d; 11 / 12 at 10 d
         (NOT the 20261021 numbering, where 6-8 were plate 5's later time points)
+        13 / 14 / 15 / 16 = main plates 1 / 2 / 3 / 4 at 5 d (part 2: 01_setup/outputs_part02/,
+        built by run_setup_part02.py; its minibar sheet covers barcode plates 1-16)
   99    decoy barcodes on the sample sheet only (no physical plate)
 
 Barcodes are new (none shared with 20261021), so use these primer picklists, not 20261021's.

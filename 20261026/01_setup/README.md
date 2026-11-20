@@ -20,6 +20,7 @@ The design rationale (pool, separation, relatedness, inoculum) is in
 | `outputs/layout.csv` | every well: community, members, replicate, `culture_plate`, time point, barcodes |
 | `outputs/communities.csv` | every community; `passage_plates` = `5 6` marks the between-plate replicates, `plate6_origin` says why a community is on plate 6 |
 | `outputs/minibar_sheet_20261026.tsv`, `demultiplex_config_20261026.yaml` | demultiplexing |
+| `run_setup_part02.py` → `outputs_part02/` | **part 2: barcode plates 13–16 = main plates 1–4 at 5 d** (primer picklists, layout 1–16, sheet 1–16; see below) |
 
 ## The design
 
@@ -89,3 +90,29 @@ minibar sheet): the inputs and 20261021's outputs match 20261021's manifest; pla
 match 20261021 in every well and every strain transfer; every shared community is on both
 passage plates in full triplicate with identical per-member volumes; plate 6 is core-only;
 no barcode combination overlaps 20261021's.
+
+## Part 2: barcode plates 13–16 (main plates 1–4 at 5 d)
+
+Added 2026-11-18 by `run_setup_part02.py`, which reads `outputs/` (untouched; md5-checked
+against its manifest) and writes `outputs_part02/`:
+
+| barcode plate | 13 | 14 | 15 | 16 |
+|---|---|---|---|---|
+| culture plate | 1 | 2 | 3 | 4 |
+| time point | 5 d | 5 d | 5 d | 5 d |
+
+- `outputs_part02/primer_shooting/echo_primers_20261026_plate_13..16.csv`: the primer picklists.
+- `outputs_part02/layout.csv`: `outputs/layout.csv` byte for byte, plus plates 13–16 (each plate's
+  wells are its culture plate's).
+- `outputs_part02/minibar_sheet_20261026_part02.tsv`: part 1's sheet unchanged (decoys kept)
+  plus plates 13–16. **Use it for any run that carries plates 13–16**: part 1's sheet does not
+  have their barcodes.
+- **Barcodes no longer fully disjoint from 20261021.** After part 1's 4,004 combinations and
+  20261021's 2,772, only 625 valid combinations were left for 1,232 wells. In order, plates 13–16
+  use the 625 never-used combinations, 20261021's 308 decoys (never in a well, so no DNA exists),
+  then 299 combinations of 20261021 wells. A 20261021 well's combination is reused only where that
+  well was a blank or held a strain the new well never receives, so a stray 20261021 read still
+  shows up as a foreign strain. `part02_barcodes.csv` says where each combination came from. No
+  combination of part 1 is reused. The 2,165 combinations still free are all from 20261021 wells.
+- Primer drawn per oligo source well: plates 13–16 add at most 5.8 µL; plates 1–16 together
+  draw at most 17.0 µL, and 23.2 µL if 20261021's plates were shot from the same primer plate.
